@@ -41,6 +41,7 @@ func main() {
 
 	fmt.Println(val)
 
+	// storing composite data
 	product, err := json.Marshal(Product{
 		ProductID:    1234,
 		ProductName:  "pen",
