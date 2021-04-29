@@ -1,11 +1,11 @@
 syntax = "proto3";
 
-package product;
+package proto;
 
-option go_package = "proto;product";
+option go_package = "proto";
 
 message Product {
-	int32 id = 1;
+	uint32 id = 1;
 	string name = 2;
 	string type = 3;
 	int32 prize = 4;
@@ -64,5 +64,5 @@ service ProductService {
 	rpc GetProduct(GetProductRequest) returns (GetProductResponse);
 	rpc UpdateProduct(UpdateProductRequest) returns (UpdateProductResponse);
 	rpc DeleteProduct(DeleteProductRequest) returns (DeleteProductResponse);
-	rpc GetProducts(GetProductsRequest) returns (GetProductsResponse);
+	rpc GetProducts(GetProductsRequest) returns (stream GetProductsResponse);
 }

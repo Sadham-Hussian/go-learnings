@@ -1,2 +1,2 @@
 # go-learnings
-This repository contains projects developed to learn Golang.
+This repository contains my learnings in Golang.
